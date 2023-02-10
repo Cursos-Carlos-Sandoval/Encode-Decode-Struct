@@ -5,9 +5,9 @@
 
 /**
  * Memory Representation of Person in Bytes:
- * 	name				age					address			height
+ *     name        age       address      height
  * |----------||----------||----------||----------|
- * |	1 * 50  ||		2			||	1 * 50	||		4			|
+ * |  1 * 50  ||    2     ||  1 * 50  ||    4     |
  * |----------||----------||----------||----------|
  */
 typedef struct person {
