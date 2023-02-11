@@ -25,3 +25,15 @@ void write_float_text(char *buffer, float num, FILE *file) {
 	sprintf(buffer, "%.2f", num);
 	write_buffer(buffer, file);
 }
+
+void write_unsigned_short_binary(unsigned short num, FILE *file) {
+	size_t process_validator = fwrite(&num, sizeof(unsigned short), 1, file);
+	if (process_validator < 1) raise_error("FILE: An error occurred while writing unsigned short number to the file\n");
+	fputs("\n", file);
+}
+
+void write_float_binary(float num, FILE *file) {
+	size_t process_validator = fwrite(&num, sizeof(float), 1, file);
+	if (process_validator < 1) raise_error("FILE: An error occurred while writing float number to the file\n");
+	fputs("\n", file);
+}

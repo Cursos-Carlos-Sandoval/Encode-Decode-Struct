@@ -12,6 +12,7 @@ int main() {
 	p1.height = 1.73;
 
 	person_to_text(&p1, "./data/persona.txt");
+	person_to_binary(&p1, "./data/persona.bin");
 
 	return EXIT_SUCCESS;
 }

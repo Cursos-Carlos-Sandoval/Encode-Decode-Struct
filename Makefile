@@ -20,4 +20,4 @@ $(OBJ_DIR)/utils.o: $(SRC_DIR)/Person/person.h $(SRC_DIR)/Utils/utils.h $(SRC_DI
 	$(CC) $(CFLAGS) -o $(OBJ_DIR)/utils.o -c $(SRC_DIR)/Utils/utils.c
 
 clean:
-	rm -rf bin/* obj/*
+	rm -rf bin/* obj/* data/*
