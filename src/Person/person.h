@@ -17,4 +17,7 @@ typedef struct person {
 	float height;
 } Person
 
+void extract_name(Person *person, char *buffer);
+void extract_address(Person *person, char *buffer);
+
 #endif // PERSON

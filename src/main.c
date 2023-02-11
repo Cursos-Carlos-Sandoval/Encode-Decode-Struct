@@ -1,7 +1,7 @@
+#include "Encoder/encoder.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "person.h"
 
 int main() {
 	Person p1;
@@ -9,6 +9,8 @@ int main() {
 	strncpy(p1.address, "498 Bayberry St. Goshen", ARRAY_MAX_SIZE);
 	p1.age = 19;
 	p1.height = 1.73;
+
+	person_to_text(p1, "./data/persona.txt");
 
 	return EXIT_SUCCESS;
 }
