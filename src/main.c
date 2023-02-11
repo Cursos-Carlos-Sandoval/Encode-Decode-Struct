@@ -1,4 +1,5 @@
-#include "Encoder/encoder.h"
+#include "./Person/person.h"
+#include "./Encoder/encoder.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,7 +11,7 @@ int main() {
 	p1.age = 19;
 	p1.height = 1.73;
 
-	person_to_text(p1, "./data/persona.txt");
+	person_to_text(&p1, "./data/persona.txt");
 
 	return EXIT_SUCCESS;
 }

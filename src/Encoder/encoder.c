@@ -1,14 +1,7 @@
+#include "../Utils/utils.h"
 #include "encoder.h"
 #include "../File/file.h"
-#include "../Person/person.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-void raise_error(char *message) {
-	fprintf(stderr, "%s", message);
-	exit(EXIT_FAILURE);
-}
 
 void person_to_text(Person *person, char filename[]) {
 	FILE *file = open_file(filename, "w");
@@ -17,13 +10,14 @@ void person_to_text(Person *person, char filename[]) {
 
 	extract_name(person, buffer);
 	write_buffer(buffer, file);
+	clear_buffer(buffer);
 
 	extract_address(person, buffer);
 	write_buffer(buffer, file);
+	clear_buffer(buffer);
 
-	write_integer(person->age, file);
-	write_float(person->height, file);
+	write_integer_text(buffer, person->age, file);
+	//write_float_text(person->height, file);
 
 	fclose(file);
-	return;
 }

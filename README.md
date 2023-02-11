@@ -1,8 +1,8 @@
 # Code - Decode Struct
 
 ## References
-- [fopen_s Reference](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fopen-s-wfopen-s?view=msvc-170)
-- [fwrite Reference](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fwrite?view=msvc-170)
-- [strncpy_s Reference](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l?view=msvc-170)
-- [_TRUNCATE Reference](https://learn.microsoft.com/es-es/cpp/c-runtime-library/truncate?view=msvc-170)
-- [fputs Reference](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fputs-fputws?view=msvc-170)
+- [fwrite Docs](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fwrite?view=msvc-170)
+- [strncpy Man](https://linux.die.net/man/3/strncpy)
+- [fputs Man](https://man7.org/linux/man-pages/man3/fputs.3p.html)
+- [Integer to string conversion](https://stackoverflow.com/questions/8257714/how-can-i-convert-an-int-to-a-string-in-c)
+- [Makefile reference](https://github.com/antoniosarosi/mem_alloc_c/blob/master/Makefile)

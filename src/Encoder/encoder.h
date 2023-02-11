@@ -1,7 +1,8 @@
 #ifndef ENCODER
 #define ENCODER
 
-void raise_error(char *message);
+#include "../Person/person.h"
+
 void person_to_text(Person *person, char filename[]);
 
 #endif // ENCODER
