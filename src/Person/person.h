@@ -15,6 +15,9 @@ typedef struct person {
 	char address[ARRAY_MAX_SIZE];
 	unsigned short age;
 	float height;
-} Person
+} Person;
+
+void extract_name(Person *person, char *buffer);
+void extract_address(Person *person, char *buffer);
 
 #endif // PERSON
