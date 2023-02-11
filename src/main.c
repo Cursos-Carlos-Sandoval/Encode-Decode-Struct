@@ -1,5 +1,6 @@
 #include "./Person/person.h"
 #include "./Encoder/encoder.h"
+#include "./Decoder/decoder.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -13,6 +14,7 @@ int main() {
 
 	person_to_text(&p1, "./data/persona.txt");
 	person_to_binary(&p1, "./data/persona.bin");
+	print_text("./data/persona.txt");
 
 	return EXIT_SUCCESS;
 }

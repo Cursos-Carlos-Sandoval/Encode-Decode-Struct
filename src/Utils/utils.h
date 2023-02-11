@@ -2,6 +2,6 @@
 #define UTILS
 
 void raise_error(char *message);
-void clear_buffer(char *buffer);
+void clean_buffer(char *buffer);
 
 #endif // UTILS

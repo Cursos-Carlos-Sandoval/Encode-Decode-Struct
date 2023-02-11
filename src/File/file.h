@@ -9,6 +9,7 @@ void write_integer_text(char *buffer, int num, FILE *file);
 void write_float_text(char *buffer, float num, FILE *file);
 void write_unsigned_short_binary(unsigned short num, FILE *file);
 void write_float_binary(float num, FILE *file);
+void read_text(char *buffer, FILE *file);
 
 
 #endif // FILE_HEADER
