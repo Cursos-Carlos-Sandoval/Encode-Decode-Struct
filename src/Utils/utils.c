@@ -9,6 +9,6 @@ void raise_error(char *message) {
 	exit(EXIT_FAILURE);
 }
 
-void clear_buffer(char *buffer) {
+void clean_buffer(char *buffer) {
 	strncpy(buffer, "", ARRAY_MAX_SIZE);
 }
