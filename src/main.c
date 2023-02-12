@@ -14,7 +14,11 @@ int main() {
 
 	person_to_text(&p1, "./data/persona.txt");
 	person_to_binary(&p1, "./data/persona.bin");
+
+	printf("TEXTO:\n");
 	print_text("./data/persona.txt");
+	printf("\nBINARIO:\n");
+	print_binary("./data/persona.bin");
 
 	return EXIT_SUCCESS;
 }
