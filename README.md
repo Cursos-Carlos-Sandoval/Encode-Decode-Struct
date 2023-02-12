@@ -1,4 +1,8 @@
 # Code - Decode Struct
+Compile and execute:
+```shell
+make
+```
 
 ## References
 - [fwrite Docs](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fwrite?view=msvc-170)
