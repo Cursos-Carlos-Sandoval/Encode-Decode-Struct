@@ -13,3 +13,5 @@ make
 - [fgetc Docs](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/fgetc-fgetwc?view=msvc-170)
 - [Float conversion with memcpy](https://stackoverflow.com/questions/57527663/c-store-float-to-char-array-and-reverse)
 - [sprintf Docs](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l?view=msvc-170)
+- [Use safe alternative to scanf](http://sekrit.de/webdocs/c/beginners-guide-away-from-scanf.html)
+- [Clean string - fgets](https://stackoverflow.com/questions/2693776/removing-trailing-newline-character-from-fgets-input)
