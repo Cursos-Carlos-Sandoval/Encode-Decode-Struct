@@ -7,7 +7,8 @@ DATA_DIR = ./data
 MAIN_DEPENDENCIES = $(SRC_DIR)/Menu/menu.h \
 	$(SRC_DIR)/main.c $(OBJ_DIR)/menu.o $(OBJ_DIR)/decoder.o $(OBJ_DIR)/encoder.o $(OBJ_DIR)/file.o $(OBJ_DIR)/person.o $(OBJ_DIR)/utils.o
 
-build: $(BIN_DIR)/main
+
+build: create_obj_dir create_bin_dir $(BIN_DIR)/main
 	./bin/main
 
 $(BIN_DIR)/main: $(MAIN_DEPENDENCIES)
@@ -30,6 +31,13 @@ $(OBJ_DIR)/person.o: $(SRC_DIR)/Utils/utils.h $(SRC_DIR)/Person/person.h $(SRC_D
 
 $(OBJ_DIR)/utils.o: $(SRC_DIR)/Person/person.h $(SRC_DIR)/Utils/utils.h $(SRC_DIR)/Utils/utils.c
 	$(CC) $(CFLAGS) -o $(OBJ_DIR)/utils.o -c $(SRC_DIR)/Utils/utils.c
+
+# Build dirs
+create_bin_dir:
+	$(shell mkdir -p $(BIN_DIR))
+
+create_obj_dir:
+	$(shell mkdir -p $(OBJ_DIR))
 
 .PHONY: clean_obj clean_data clean_bin clean clean_all
 clean_obj:
