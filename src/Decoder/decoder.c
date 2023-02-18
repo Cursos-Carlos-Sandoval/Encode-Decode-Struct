@@ -9,7 +9,7 @@ void print_text(char filename[]) {
 	FILE *file = open_file(filename, "r");
 
 	char buffer[ARRAY_MAX_SIZE];
-	printf("\nPrint from plain text file: \n\n");
+	printf("Print from plain text file: \n\n");
 	do {
 		clean_buffer(buffer);
 		char *ref = fgets(buffer, ARRAY_MAX_SIZE, file);
@@ -32,7 +32,7 @@ void print_text(char filename[]) {
 void print_binary(char filename[]) {
 	FILE *file = open_file(filename, "rb");
 
-	printf("\nPrint from binary file: \n\n");
+	printf("Print from binary file: \n\n");
 	read_text_binary(file); // Name
 	read_text_binary(file); // Address
 	read_unsigned_short(file); // Age

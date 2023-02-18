@@ -3,6 +3,6 @@
 
 long main_menu();
 void encoder_menu();
-void decoder_menu();
+void decoder_menu(char *path);
 
 #endif // MENU

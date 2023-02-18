@@ -93,26 +93,17 @@ void encoder_menu() {
 	printf("File has been created!\n");
 }
 
-void decoder_menu() {
-	char buffer[1024];
-	printf("Path to file (with extension): ");
-	if (!fgets(buffer, 1024, stdin)) {
-		raise_error("MENU: Invalid input");
-	} else {
-		// Clean buffer
-		buffer[strcspn(buffer, "\r\n")] = 0;
-
-		// Get extension
-		if (strstr(buffer, ".txt")) {
-			print_text(buffer);
-			return;
-		}
-
-		if (strstr(buffer, ".bin")) {
-			print_binary(buffer);
-			return;
-		}
-
-		raise_error("FILE: Invalid extension\n");
+void decoder_menu(char *path) {
+	// Get extension
+	if (strstr(path, ".txt")) {
+		print_text(path);
+		return;
 	}
+
+	if (strstr(path, ".bin")) {
+		print_binary(path);
+		return;
+	}
+
+	raise_error("FILE: Invalid extension\n");
 }

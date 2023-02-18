@@ -1,7 +1,17 @@
 # Code - Decode Struct
-Compile and execute:
+Compile:
 ```shell
 make
+```
+
+Execute encoder:
+```shell
+./bin/main
+```
+
+Execute decoder:
+```shell
+./bin/main -d <path_to_encoded_file>
 ```
 
 ## References
@@ -15,3 +25,4 @@ make
 - [sprintf Docs](https://learn.microsoft.com/es-es/cpp/c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l?view=msvc-170)
 - [Use safe alternative to scanf](http://sekrit.de/webdocs/c/beginners-guide-away-from-scanf.html)
 - [Clean string - fgets](https://stackoverflow.com/questions/2693776/removing-trailing-newline-character-from-fgets-input)
+- [strcmp Docs](https://cplusplus.com/reference/cstring/strcmp/)
