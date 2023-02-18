@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 	// No flag defined - Encode flag
 	if (argc < 2 || strcmp(argv[1], "--encode") == 0 || strcmp(argv[1], "-e") == 0) {
 		printf("Start the encode menu...\n");

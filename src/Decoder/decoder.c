@@ -5,7 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_text(char filename[]) {
+void print_text(char filename[])
+{
 	FILE *file = open_file(filename, "r");
 
 	char buffer[ARRAY_MAX_SIZE];
@@ -13,15 +14,16 @@ void print_text(char filename[]) {
 	do {
 		clean_buffer(buffer);
 		char *ref = fgets(buffer, ARRAY_MAX_SIZE, file);
-		if (ref == NULL) continue;
+		if (ref == NULL)
+			continue;
 
 		switch (*ref) {
-			case '\0':
-				printf("\n");
-				break;
-			default:
-				printf("%s", ref);
-				break;
+		case '\0':
+			printf("\n");
+			break;
+		default:
+			printf("%s", ref);
+			break;
 		}
 
 	} while (!feof(file));
@@ -29,7 +31,8 @@ void print_text(char filename[]) {
 	fclose(file);
 }
 
-void print_binary(char filename[]) {
+void print_binary(char filename[])
+{
 	FILE *file = open_file(filename, "rb");
 
 	printf("Print from binary file: \n\n");

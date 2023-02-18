@@ -8,7 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-long main_menu() {
+long main_menu()
+{
 	char buffer[1024];
 	long value;
 	int success = 0;
@@ -39,7 +40,8 @@ long main_menu() {
 	return value;
 }
 
-void encoder_menu() {
+void encoder_menu()
+{
 	char buffer[ARRAY_MAX_SIZE];
 	Person person;
 
@@ -58,7 +60,7 @@ void encoder_menu() {
 	printf("Enter the age: ");
 	fgets(buffer, ARRAY_MAX_SIZE, stdin);
 	char *end_ptr;
-	person.age = (int) strtol(buffer, &end_ptr, 10);
+	person.age = (int)strtol(buffer, &end_ptr, 10);
 
 	printf("Enter the height: ");
 	fgets(buffer, ARRAY_MAX_SIZE, stdin);
@@ -77,8 +79,8 @@ void encoder_menu() {
 		char filename[2048] = "./data/";
 
 		// Create path to text file
-		strcat(filename, buffer);// ./data + buffer
-		strcat(filename, ".txt");// ./data + buffer + .txt
+		strcat(filename, buffer); // ./data + buffer
+		strcat(filename, ".txt"); // ./data + buffer + .txt
 		person_to_text(&person, filename);
 
 		// Clear buffer
@@ -86,14 +88,15 @@ void encoder_menu() {
 
 		// Create path to binary file
 		strcat(filename, "./data/");
-		strcat(filename, buffer);// ./data + buffer
-		strcat(filename, ".bin");// ./data + buffer + .bin
+		strcat(filename, buffer); // ./data + buffer
+		strcat(filename, ".bin"); // ./data + buffer + .bin
 		person_to_binary(&person, filename);
 	}
 	printf("File has been created!\n");
 }
 
-void decoder_menu(char *path) {
+void decoder_menu(char *path)
+{
 	// Get extension
 	if (strstr(path, ".txt")) {
 		print_text(path);
