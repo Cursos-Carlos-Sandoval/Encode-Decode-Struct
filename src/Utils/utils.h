@@ -1,7 +1,6 @@
 #ifndef UTILS
 #define UTILS
 
-
 /**
  * Method that allows executing the program to end immediately and print a message about the reason
  * @param message to print before finishing the execution
