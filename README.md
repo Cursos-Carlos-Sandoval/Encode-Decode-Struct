@@ -1,7 +1,17 @@
 # Code - Decode Struct
-Compile and execute:
+Compile:
 ```shell
 make
+```
+
+Execute encoder:
+```shell
+./bin/main
+```
+
+Execute decoder:
+```shell
+./bin/main -d <path_to_encoded_file>
 ```
 
 ## References
