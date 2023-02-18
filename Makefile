@@ -4,12 +4,12 @@ SRC_DIR = ./src
 BIN_DIR = ./bin
 OBJ_DIR = ./obj
 DATA_DIR = ./data
-MAIN_DEPENDENCIES = $(SRC_DIR)/Menu/menu.h \
+MAIN_DEPENDENCIES = $(SRC_DIR)/Menu/menu.h $(SRC_DIR)/Utils/utils.h \
 	$(SRC_DIR)/main.c $(OBJ_DIR)/menu.o $(OBJ_DIR)/decoder.o $(OBJ_DIR)/encoder.o $(OBJ_DIR)/file.o $(OBJ_DIR)/person.o $(OBJ_DIR)/utils.o
 
 
 build: create_obj_dir create_bin_dir $(BIN_DIR)/main
-	./bin/main
+	@echo Building...
 
 $(BIN_DIR)/main: $(MAIN_DEPENDENCIES)
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/main $(OBJ_DIR)/menu.o $(OBJ_DIR)/decoder.o $(OBJ_DIR)/encoder.o $(OBJ_DIR)/file.o $(OBJ_DIR)/person.o $(OBJ_DIR)/utils.o $(SRC_DIR)/main.c
