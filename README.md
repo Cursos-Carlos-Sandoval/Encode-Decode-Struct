@@ -1,4 +1,4 @@
-# Code - Decode Struct
+# Encode - Decode Struct
 Compile:
 ```shell
 make
